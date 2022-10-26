@@ -12,10 +12,10 @@ const DisplayEntries = (props) => {
             <tbody>
             {props.parentEntries.map((entry, index) => {
                 return (
-                <tr>
-                <td>{index + 1}</td>
-                <td>{entry.weight}</td>
-                <td>{entry.date}</td>
+                <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{entry.weight}</td>
+                    <td>{entry.date}</td>
                 </tr>
                 )
             })}
